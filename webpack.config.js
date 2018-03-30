@@ -6,7 +6,7 @@ const middleware = require('webpack-dev-middleware');
 const webpack = require('webpack')
 
 module.exports = {
-	entry: ['./src/index.js', './src/imports.js', './src/app.jsx'],
+	entry: ['./src/scripts/app.js', './src/scripts/imports.js'],
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'dist')
@@ -100,7 +100,7 @@ module.exports = {
 	    new HtmlWebpackPlugin({
 			filename: 'index.html',
 			template: 'src/index.html',
-			title: 'Principal template',
+			title: 'Abecedario LSC',
 			minify: {
 				collapseWhitespace: true
 			}
