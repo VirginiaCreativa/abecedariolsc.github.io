@@ -18,7 +18,8 @@ module.exports = {
 	},
 	resolve: {
         alias: {
-            jquery: "jquery/src/jquery"
+            jquery: "jquery/src/jquery",
+            images: path.resolve(__dirname, './src/images')
         }
     },
 	module: {
@@ -36,13 +37,16 @@ module.exports = {
 			{
 				test: /\.(png|svg|jpe?g|gif|ico)$/,
 				use: {
-					loader: 'url-loader',
+					loader: 'file-loader',
 					options: {
-						limit: 10000,
 						outputPath: 'images/',
-                        name: '[name].[ext]?[hash]'
-					}
-				} 			
+						publicPath: 'images/',
+						name: '[path][name].[ext]'
+					}  
+				}
+
+				
+				 			
 			}, 
 			{
 				test: /(\.css|\.scss)$/,

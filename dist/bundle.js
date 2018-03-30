@@ -71,6 +71,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/images/logo.svg":
+/*!*****************************!*\
+  !*** ./src/images/logo.svg ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"images/src/images/logo.svg\";\n\n//# sourceURL=webpack:///./src/images/logo.svg?");
+
+/***/ }),
+
 /***/ "./src/scripts/app.js":
 /*!****************************!*\
   !*** ./src/scripts/app.js ***!
@@ -79,7 +90,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nwindow.addEventListener('keydown', handleKey);\n\nfunction handleKey(ev) {\n  console.log(ev.keyCode);\n  var title = document.querySelector('.keyAbece__title');\n  title.style.display = 'none';\n  var number = document.querySelector('.keyAbece__hand');\n\n  number.innerHTML = keyCodes[ev.keyCode] ? ev.keyCode : 'Solo alfabero';\n  // if(keyCodes[ev.keyCode]) {\n}\nvar keyCodes = {\n  65: \"a\",\n  66: \"b\",\n  67: \"c\",\n  68: \"d\",\n  69: \"e\",\n  70: \"f\",\n  71: \"g\",\n  72: \"h\",\n  73: \"i\",\n  74: \"j\",\n  75: \"k\",\n  76: \"l\",\n  77: \"m\",\n  78: \"n\",\n  79: \"o\",\n  80: \"p\",\n  81: \"q\",\n  82: \"r\",\n  83: \"s\",\n  84: \"t\",\n  85: \"u\",\n  86: \"v\",\n  87: \"w\",\n  88: \"x\",\n  89: \"y\",\n  90: \"z\"\n\n};\n\n//# sourceURL=webpack:///./src/scripts/app.js?");
+eval("\n\nwindow.addEventListener('keydown', handleKey);\n\nvar keyCodes = {\n  65: \"a\",\n  66: \"b\",\n  67: \"c\",\n  68: \"d\",\n  69: \"e\",\n  70: \"f\",\n  71: \"g\",\n  72: \"h\",\n  73: \"i\",\n  74: \"j\",\n  75: \"k\",\n  76: \"l\",\n  77: \"m\",\n  78: \"n\",\n  79: \"o\",\n  80: \"p\",\n  81: \"q\",\n  82: \"r\",\n  83: \"s\",\n  84: \"t\",\n  85: \"u\",\n  86: \"v\",\n  87: \"w\",\n  88: \"x\",\n  89: \"y\",\n  90: \"z\"\n};\n\nfunction handleKey(ev) {\n\n  console.log(ev.keyCode);\n\n  var title = document.querySelector('.keyAbece__title');\n  title.style.display = 'none';\n\n  var number = document.querySelector('.keyAbece__hand');\n  number.innerHTML = keyCodes[ev.keyCode] ? ev.keyCode : 'Solo alfabero';\n}\n\n//# sourceURL=webpack:///./src/scripts/app.js?");
 
 /***/ }),
 
@@ -91,40 +102,18 @@ eval("\n\nwindow.addEventListener('keydown', handleKey);\n\nfunction handleKey(e
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _main = __webpack_require__(/*! ./../style/main.scss */ \"./src/style/main.scss\");\n\nvar _main2 = _interopRequireDefault(_main);\n\nvar _global = __webpack_require__(/*! ./../style/global.scss */ \"./src/style/global.scss\");\n\nvar _global2 = _interopRequireDefault(_global);\n\nvar _imports = __webpack_require__(/*! ./../style/_imports.scss */ \"./src/style/_imports.scss\");\n\nvar _imports2 = _interopRequireDefault(_imports);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nconsole.log('funciona sass');\n\n//# sourceURL=webpack:///./src/scripts/imports.js?");
+eval("\n\nvar _imports = __webpack_require__(/*! ./../style/imports.scss */ \"./src/style/imports.scss\");\n\nvar _imports2 = _interopRequireDefault(_imports);\n\nvar _logo = __webpack_require__(/*! ./../images/logo.svg */ \"./src/images/logo.svg\");\n\nvar _logo2 = _interopRequireDefault(_logo);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nconsole.log('funciona sass');\n\n//# sourceURL=webpack:///./src/scripts/imports.js?");
 
 /***/ }),
 
-/***/ "./src/style/_imports.scss":
-/*!*********************************!*\
-  !*** ./src/style/_imports.scss ***!
-  \*********************************/
+/***/ "./src/style/imports.scss":
+/*!********************************!*\
+  !*** ./src/style/imports.scss ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/style/_imports.scss?");
-
-/***/ }),
-
-/***/ "./src/style/global.scss":
-/*!*******************************!*\
-  !*** ./src/style/global.scss ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/style/global.scss?");
-
-/***/ }),
-
-/***/ "./src/style/main.scss":
-/*!*****************************!*\
-  !*** ./src/style/main.scss ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/style/main.scss?");
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/style/imports.scss?");
 
 /***/ }),
 

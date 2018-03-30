@@ -1,14 +1,5 @@
 window.addEventListener('keydown', handleKey)
 
-function handleKey (ev) {
-	console.log(ev.keyCode);
-	const title = document.querySelector('.keyAbece__title')
-	title.style.display = 'none'
-	const number = document.querySelector('.keyAbece__hand')
-
-	number.innerHTML = keyCodes[ev.keyCode] ? ev.keyCode : 'Solo alfabero';
-	// if(keyCodes[ev.keyCode]) {
-}
 const keyCodes = {
   65 : "a",
   66 : "b",
@@ -36,5 +27,16 @@ const keyCodes = {
   88 : "x",
   89 : "y",
   90 : "z",
-
 };
+
+function handleKey (ev) {
+
+	console.log(ev.keyCode);
+
+	const title = document.querySelector('.keyAbece__title')
+	title.style.display = 'none'
+
+	const number = document.querySelector('.keyAbece__hand')
+	number.innerHTML = keyCodes[ev.keyCode] ? ev.keyCode : 'Solo alfabero';
+	
+}
