@@ -4,6 +4,10 @@ header {
 #logotype {
 	img {
 		height: 60px;
+		&.dropshadow {
+			 filter: drop-shadow(4px 3px 0px rgba(204, 61, 49, 1.000));
+		}
 
 	}
 }
+	

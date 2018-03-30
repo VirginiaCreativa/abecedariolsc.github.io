@@ -18,8 +18,7 @@ module.exports = {
 	},
 	resolve: {
         alias: {
-            jquery: "jquery/src/jquery",
-            images: path.resolve(__dirname, './src/images')
+            jquery: "jquery/src/jquery"
         }
     },
 	module: {
