@@ -2,7 +2,6 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
-const middleware = require('webpack-dev-middleware');
 const webpack = require('webpack')
 
 module.exports = {
@@ -40,12 +39,9 @@ module.exports = {
 					options: {
 						outputPath: 'images/',
 						publicPath: 'images/',
-						name: '[path][name].[ext]'
+						name: '[name].[ext]'
 					}  
-				}
-
-				
-				 			
+				}	 			
 			}, 
 			{
 				test: /(\.css|\.scss)$/,

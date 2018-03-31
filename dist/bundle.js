@@ -71,17 +71,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/images/logo.svg":
-/*!*****************************!*\
-  !*** ./src/images/logo.svg ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = \"images/src/images/logo.svg\";\n\n//# sourceURL=webpack:///./src/images/logo.svg?");
-
-/***/ }),
-
 /***/ "./src/scripts/app.js":
 /*!****************************!*\
   !*** ./src/scripts/app.js ***!
@@ -102,7 +91,7 @@ eval("\n\nwindow.addEventListener('keydown', handleKey);\n\nvar keyCodes = {\n  
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _imports = __webpack_require__(/*! ./../style/imports.scss */ \"./src/style/imports.scss\");\n\nvar _imports2 = _interopRequireDefault(_imports);\n\nvar _logo = __webpack_require__(/*! ./../images/logo.svg */ \"./src/images/logo.svg\");\n\nvar _logo2 = _interopRequireDefault(_logo);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nconsole.log('funciona sass');\n\n//# sourceURL=webpack:///./src/scripts/imports.js?");
+eval("\n\nvar _imports = __webpack_require__(/*! ./../style/imports.scss */ \"./src/style/imports.scss\");\n\nvar _imports2 = _interopRequireDefault(_imports);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nconsole.log('funciona sass');\n\n//# sourceURL=webpack:///./src/scripts/imports.js?");
 
 /***/ }),
 
