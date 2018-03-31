@@ -79,7 +79,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nwindow.addEventListener('keydown', handleKey);\n\nvar keyCodes = {\n  65: \"a\",\n  66: \"b\",\n  67: \"c\",\n  68: \"d\",\n  69: \"e\",\n  70: \"f\",\n  71: \"g\",\n  72: \"h\",\n  73: \"i\",\n  74: \"j\",\n  75: \"k\",\n  76: \"l\",\n  77: \"m\",\n  78: \"n\",\n  79: \"o\",\n  80: \"p\",\n  81: \"q\",\n  82: \"r\",\n  83: \"s\",\n  84: \"t\",\n  85: \"u\",\n  86: \"v\",\n  87: \"w\",\n  88: \"x\",\n  89: \"y\",\n  90: \"z\"\n};\n\nfunction handleKey(ev) {\n\n  console.log(ev.keyCode);\n\n  var title = document.querySelector('.keyAbece__title');\n  title.style.display = 'none';\n\n  var number = document.querySelector('.keyAbece__hand');\n  number.innerHTML = keyCodes[ev.keyCode] ? ev.keyCode : 'Solo alfabero';\n}\n\n//# sourceURL=webpack:///./src/scripts/app.js?");
+eval("\n\nwindow.addEventListener('keydown', handleKey);\n\nvar keyCodes = {\n  65: \"a\",\n  66: \"b\",\n  67: \"c\",\n  68: \"d\",\n  69: \"e\",\n  70: \"f\",\n  71: \"g\",\n  72: \"h\",\n  73: \"i\",\n  74: \"j\",\n  75: \"k\",\n  76: \"l\",\n  77: \"m\",\n  78: \"n\",\n  79: \"o\",\n  80: \"p\",\n  81: \"q\",\n  82: \"r\",\n  83: \"s\",\n  84: \"t\",\n  85: \"u\",\n  86: \"v\",\n  87: \"w\",\n  88: \"x\",\n  89: \"y\",\n  90: \"z\"\n};\n\nfunction handleKey(ev) {\n\n  console.log(ev.keyCode);\n\n  var title = document.querySelector('.keyAbece__title');\n  title.style.display = 'none';\n  var hand = document.querySelector('.keyAbece__hand');\n  hand.style.display = 'block';\n\n  // const number = document.querySelector('.keyAbece__hand')\n  // number.innerHTML = keyCodes[ev.keyCode] ? ev.keyCode : 'Solo alfabero';\n}\n\n//# sourceURL=webpack:///./src/scripts/app.js?");
 
 /***/ }),
 
