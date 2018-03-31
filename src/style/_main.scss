@@ -3,7 +3,7 @@ header {
 }
 #logotype {
 	h3 {
-		padding: 18px 10px;
+		padding: 11px 12px 10px;
 		border: 1px solid #333;
 		display: inline-block;
 		font-weight: 800;
@@ -19,18 +19,23 @@ header {
 
 	}
 }
+#wrapper {
+	footer, main {
+		@include media-breakpoint-down(md) { 
+			height: 600px;
+		}
+		@media (min-width: 1200px) { 
+			height: 800px; 
+		}
+	}
+}
 footer {
-	position: absolute;
-	left: 0;
-	height: 65%;
-	width: 44px;
-	padding: 10px;
 	.redesocials {
 		display: grid;
 		grid-template-rows: 24px 24px 24px;
 		height: 100%;
 		align-content: end;	
-		justify-content: end;	
+		justify-content: start;	
 		grid-row-gap: 15px;
 		.redesocials__red {
 			font-size: 20px;
