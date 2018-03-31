@@ -1,13 +1,9 @@
 body {
-	background-color: $red_light !important;
+	// background-color: $red_light !important;
 	font-family: 'Source Sans Pro', sans-serif !important;
 }
 a {
     &:hover {
         text-decoration: none !important;
     }
-}
-* {
-	line-height: perfect;
-	white-space: go-away;
 }

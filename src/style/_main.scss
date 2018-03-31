@@ -2,12 +2,36 @@ header {
 	padding: 20px;
 }
 #logotype {
+	h3 {
+		padding: 10px;
+		border: 1px solid #333;
+		display: inline-block;
+		font-weight: 700;
+	}
 	img {
 		height: 60px;
 		&.dropshadow {
-			 filter: drop-shadow(4px 3px 0px rgba(204, 61, 49, 1.000));
+			 filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.2));
 		}
 
 	}
 }
-	
+footer {
+	position: absolute;
+	left: 0;
+	height: 65%;
+	width: 44px;
+	padding: 10px;
+	.redesocials {
+		display: grid;
+		grid-template-rows: 24px 24px 24px;
+		height: 100%;
+		align-content: end;	
+		justify-content: end;	
+		grid-row-gap: 15px;
+		.redesocials__red {
+			font-size: 20px;
+		}
+
+	}
+}
