@@ -22,7 +22,7 @@ header {
 #wrapper {
 	footer, main {
 		@include media-breakpoint-down(md) { 
-			height: 600px;
+			height: 400px;
 		}
 		@media (min-width: 1200px) { 
 			height: 800px; 
