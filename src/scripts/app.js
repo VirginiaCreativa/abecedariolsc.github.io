@@ -1,5 +1,9 @@
 
-$(window).on('keydown', handleKey)
+let letter = $('.keyCodMostrar__letter')
+let title = $('.keyAbece__title')
+let hand = $('.keyAbece__hand')
+let error = $('.keyAbece__error')
+
 const keyCodes = {
   65 : "a",
   66 : "b",
@@ -29,28 +33,32 @@ const keyCodes = {
   90 : "z",
 };
 
-function handleKey (ev) {
+function handleKeyDown (ev) {
   if ( !ev.metaKey ) {
     ev.preventDefault();
   }
-	
-	const title = $('.keyAbece__title')
+  
   title.css('display', 'none')
+  hand.css('display', 'block')
 
-  const hand = $('.keyAbece__hand')
-	hand.css('display', 'block')
+  letter.text(keyCodes[ev.keyCode]).addClass('active');
+  error.css('display', 'none');
 
-	const error = $('.keyAbece__error')
+  let key = (ev.keyCode) ? ev.keyCode : ev.which;
 
-  const letter = $('.keyCodMostrar_letter');
-  letter.text(keyCodes[ev.keyCode]);
-
-  if (keyCodes[ev.keyCode]) {
+  if (keyCodes[ev.keyCode] && key) {
     console.log(ev.keyCode);
-    error.text('').css('display', 'block');
-  }else {
+  } else {
     hand.css('display', 'none')
-    error.text('Solo alfabero');
+    error.text('Solo alfabero').css('display', 'block');
   }
 
 }
+
+function handleKeyUp (ev) {
+  console.log(`Handle Key UP: ${ev.keyCode}`);
+  letter.removeClass('active')
+}
+
+$(window).on('keyup', handleKeyUp);
+$(window).on('keydown', handleKeyDown)
