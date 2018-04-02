@@ -76,7 +76,17 @@ module.exports = {
 			{
 	            test: /[\/\\]node_modules[\/\\]some-module[\/\\]index\.js$/,
 	            loader: "imports-loader?this=>window"
-        	}
+        	},
+        	{
+				test: require.resolve('jquery'),
+				use: [{
+				  loader: 'expose-loader',
+				  options: 'jQuery'
+				},{
+				  loader: 'expose-loader',
+				  options: '$'
+				}]
+			}
 		]
 	},
 	plugins: [

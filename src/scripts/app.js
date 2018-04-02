@@ -1,5 +1,5 @@
-window.addEventListener('keydown', handleKey)
 
+$(window).on('keydown', handleKey)
 const keyCodes = {
   65 : "a",
   66 : "b",
