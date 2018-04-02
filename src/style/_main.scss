@@ -1,5 +1,5 @@
 /*==================== HEADER ====================*/
-.header {
+header {
 	padding: 20px;
 	#logotype {
 		h3 {
@@ -24,31 +24,34 @@
 .wrapper {
 	display: grid;
 	grid-template-rows: 100px auto;
-	grid-template-columns: 100px 1fr;
+	grid-template-columns: 80px auto;
 	height: 100vh;
 	width: 100vw;
 	 grid-template-areas:
 	     "header header"
 	     "footer content";
-	.header {
+	header {
 		grid-area: header;
-		background-color: red;
+		// background-color: red;
 	}
-	.footer {
+	footer {
 		grid-area: footer;
-        background-color: yellow;
+        // background-color: yellow;
 	}
-	.content {
+	main {
 		grid-area: content;
-        background-color: blue;
+        // background-color: blue;
     }
 }
 /*==================== MAIN ====================*/
-.content {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+main {
+	display: grid;
+	grid-template-rows:  60% 100px;
+		align-content: center; 
+		justify-content: center; 
+
 	text-align: center;
+	height: 100%;
 	.keyAbece {
 		height: 400px;
 		.keyAbece__title{
@@ -71,11 +74,10 @@
 		.keyAbece__error {
 			display: none;
 			position: relative;
-			top: 50%;
+			top: 30%;
 		}
 	}
 	.keyCodMostrar {
-		margin-top: 80px;
 		.keyCodMostrar_letter {
 			color: #aaa;
 			text-decoration: none;
@@ -102,13 +104,14 @@
 	}
 }
 /*==================== FOOTER ====================*/
-.footer {
+footer {
 	.redesocials {
 		display: grid;
 		grid-template-rows: 24px 24px 24px;
 		align-content: end; 
-		justify-content: start; 
+		justify-content: center; 
 		grid-row-gap: 15px;
+		height: 80%;
 		.redesocials__red {
 			font-size: 20px;
 			color: #333;
