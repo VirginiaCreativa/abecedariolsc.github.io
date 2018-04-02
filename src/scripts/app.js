@@ -33,10 +33,15 @@ function handleKey (ev) {
 
 	console.log(ev.keyCode);
 
-	const title = document.querySelector('.keyAbece__title')
-  title.style.display = 'none'
-  const hand = document.querySelector('.keyAbece__hand')
-	hand.style.display = 'block'
+  // const title = document.querySelector('.keyAbece__title')
+	const title = $('.keyAbece__title')
+  // title.style.display = 'none'
+  title.css('display', 'none')
+
+  // const hand = document.querySelector('.keyAbece__hand')
+  const hand = $('.keyAbece__hand')
+  // hand.style.display = 'block'
+	hand.css('display', 'block')
 
 	// const number = document.querySelector('.keyAbece__hand')
 	// number.innerHTML = keyCodes[ev.keyCode] ? ev.keyCode : 'Solo alfabero';
