@@ -1,44 +1,56 @@
 /*==================== HEADER ====================*/
-header {
+.header {
 	padding: 20px;
-}
-#logotype {
-	h3 {
-		padding: 11px 12px 10px;
-		border: 1px solid #333;
-		display: inline-block;
-		font-weight: 800;
-		margin: 0;
-		font-family: 'Catamaran';
-		letter-spacing: -1px;
-	}
-	img {
-		height: 60px;
-		&.dropshadow {
-			 filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.2));
+	#logotype {
+		h3 {
+			padding: 11px 12px 10px;
+			border: 1px solid #333;
+			display: inline-block;
+			font-weight: 800;
+			margin: 0;
+			font-family: 'Catamaran';
+			letter-spacing: -1px;
 		}
+		img {
+			height: 60px;
+			&.dropshadow {
+				 filter: drop-shadow(2px 2px 0px rgba(0, 0, 0, 0.2));
+			}
 
+		}
 	}
 }
 /*==================== WRAPPER ====================*/
-#wrapper {
-	footer, main {
-		@include media-breakpoint-down(md) { 
-			height: 400px;
-		}
-		@media (min-width: 1200px) { 
-			height: 800px; 
-		}
+.wrapper {
+	display: grid;
+	grid-template-rows: 100px auto;
+	grid-template-columns: 100px 1fr;
+	height: 100vh;
+	width: 100vw;
+	 grid-template-areas:
+	     "header header"
+	     "footer content";
+	.header {
+		grid-area: header;
+		background-color: red;
 	}
+	.footer {
+		grid-area: footer;
+        background-color: yellow;
+	}
+	.content {
+		grid-area: content;
+        background-color: blue;
+    }
 }
 /*==================== MAIN ====================*/
-main {
+.content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	.keyAbece {
-		height: 320px;
+		height: 400px;
 		.keyAbece__title{
 			position: relative;
 			top: 30%;
@@ -90,11 +102,10 @@ main {
 	}
 }
 /*==================== FOOTER ====================*/
-footer {
+.footer {
 	.redesocials {
 		display: grid;
 		grid-template-rows: 24px 24px 24px;
-		height: 100%;
 		align-content: end; 
 		justify-content: start; 
 		grid-row-gap: 15px;
