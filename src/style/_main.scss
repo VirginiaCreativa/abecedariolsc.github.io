@@ -52,7 +52,7 @@ main {
 	text-align: center;
 	height: 100%;
 	.keyAbece {
-		height: 400px;
+		height: 42a0px;
 		.keyAbece__title{
 			position: relative;
 			top: 30%;
@@ -65,10 +65,7 @@ main {
 		}
 		.keyAbece__hand {
 			display: none;
-			img {
-				width: 320px;
-				height: 320px;
-			}
+			width: 100vh;
 		}
 		.keyAbece__error {
 			position: relative;
@@ -126,5 +123,4 @@ footer {
 
 	}
 }
-/*==================== SVG ====================*/
 
