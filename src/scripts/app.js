@@ -1,8 +1,8 @@
 
-let letter = $('.keyCodMostrar__letter')
-let title = $('.keyAbece__title')
-let hand = $('.keyAbece__hand')
-let error = $('.keyAbece__error')
+let letter = document.querySelector('.keyCodMostrar__letter')
+let title = document.querySelector('.keyAbece__title')
+let hand = document.querySelector('.keyAbece__hand')
+let error = document.querySelector('.keyAbece__error')
 
 const keyCodes = {
   65 : "a",
@@ -38,27 +38,29 @@ function handleKeyDown (ev) {
     ev.preventDefault();
   }
   
-  title.css('display', 'none')
-  hand.css('display', 'block')
+  title.style.display = 'none'
+  error.style.display = 'none'
 
-  letter.text(keyCodes[ev.keyCode]).addClass('active');
-  error.css('display', 'none');
+  
 
   let key = (ev.keyCode) ? ev.keyCode : ev.which;
 
   if (keyCodes[ev.keyCode] && key) {
     console.log(ev.keyCode);
+    letter.innerHTML = keyCodes[ev.keyCode]
+    letter.classList.add('active')
   } else {
-    hand.css('display', 'none')
-    error.text('Solo alfabero').css('display', 'block');
+    error.style.display = 'block'
   }
+
+
 
 }
 
 function handleKeyUp (ev) {
-  console.log(`Handle Key UP: ${ev.keyCode}`);
-  letter.removeClass('active')
+ letter.classList.remove('active')
+
 }
 
-$(window).on('keyup', handleKeyUp);
-$(window).on('keydown', handleKeyDown)
+window.addEventListener('keyup', handleKeyUp);
+window.addEventListener('keydown', handleKeyDown)

@@ -73,6 +73,10 @@ main {
 		.keyAbece__error {
 			position: relative;
 			top: 30%;
+			display: none;
+			i {
+				color: $red;
+			}
 		}
 	}
 	.keyCodMostrar {
